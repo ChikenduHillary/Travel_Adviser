@@ -1,6 +1,6 @@
 import { Box, Typography, Button, Card, CardMedia, CardContent, CardActions, Chip } from "@material-ui/core";
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import PhoneIcon from '@material-ui/icons/phone';
+// import PhoneIcon from '@material-ui/icons/phone';
 import Rating from "@material-ui/lab/Rating";
 
 import useStyles from './styles';
@@ -54,7 +54,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
                 {
                     place?.phone && (
                         <Typography gutterBottom variant='subtitle2' color="textSecondary" className={classes.spacing}>
-                             <PhoneIcon /> {place.phone}
+                             {place.phone}
                         </Typography>
                     )
                 }
